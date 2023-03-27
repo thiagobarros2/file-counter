@@ -20,7 +20,9 @@ final class Counter
         $dir = opendir($path);
         $result = 0;
         while ($file = readdir($dir = null)) {
-            if (str_ends_with($file, $file_extension)) {
+            $is_file = is_file($path.'/'.$file);
+            $str_ends_with_given_extension = str_ends_with($file, $file_extension);
+            if ($is_file && $str_ends_with_given_extension) {
                 $result++;
             }
         }
