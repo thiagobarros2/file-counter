@@ -1,5 +1,4 @@
 ## Instalation 
-
 ```bash
 # development
 $ composer require thiagobarros2/file-counter --dev
