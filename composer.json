@@ -1,6 +1,6 @@
 {
     "name": "thiagobarros2/file-counter",
-    "description": "Extends pest adding a simple way to test how many files are into a given dir",
+    "description": "A simple way to test how many files are into a given dir based on extension",
     "keywords": [
         "php",
         "framework",
