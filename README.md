@@ -20,6 +20,6 @@ use ThiagoBarros\FileCounter\Counter;
 
 function yourFunction() {
     $number_of_files = Counter::number_of_files('tests', 'php'); //the file_extension param can be provided with or without '.'    
-    return = $number_of_files;
+    return $number_of_files;
 });
 ```
