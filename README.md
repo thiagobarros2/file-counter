@@ -6,7 +6,7 @@ $ composer require thiagobarros2/file-counter --dev
 # production
 $ composer require thiagobarros2/file-counter
 
-# warning: this package can be of course used in production but was thinking to be a dev-dependency.
+# warning: this package can be of course used in production but was thought to be a dev-dependency
 ```
 
 ## Usage
