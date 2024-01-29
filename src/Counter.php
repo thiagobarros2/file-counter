@@ -14,11 +14,15 @@ final class Counter
         if (str_starts_with($file_extension, '.')) {
             $file_extension = trim($file_extension, '.');
         }
+
         if (! is_dir($path)) {
             throw new \InvalidArgumentException;
         }
+
         $dir = opendir($path);
+
         $result = 0;
+
         while ($file = readdir($dir = null)) {
             $is_file = is_file($path.'/'.$file);
             $str_ends_with_given_extension = str_ends_with($file, $file_extension);
@@ -26,6 +30,7 @@ final class Counter
                 $result++;
             }
         }
+
         closedir($dir = null);
 
         return $result;
