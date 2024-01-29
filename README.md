@@ -21,4 +21,15 @@ function yourFunction() {
     $number_of_files = Counter::number_of_files('path_to_dir', 'file_extension'); //the file_extension param can be provided with or without '.'    
     return $number_of_files;
 });
+
+<?php
+
+namespace src;
+
+use ThiagoBarros\FileCounter\Lister;
+
+function yourFunction() {
+    $files_by_extension = Lister::files_by_extension('path_to_dir');     
+    return $files_by_extension;
+});
 ```
