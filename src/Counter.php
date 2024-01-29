@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace ThiagoBarros\FileCounter;
 
-/**
- * @internal
- */
 final class Counter
 {
     public static function number_of_files(string $path, string $file_extension): int
