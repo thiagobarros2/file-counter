@@ -16,7 +16,7 @@ final class Counter
         }
 
         if (! is_dir($path)) {
-            throw new \InvalidArgumentException;
+            throw new \InvalidArgumentException('Invalid path given');
         }
 
         $dir = opendir($path);
