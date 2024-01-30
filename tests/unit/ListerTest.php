@@ -5,7 +5,13 @@ use ThiagoBarros\FileCounter\Lister;
 it('should return the number of files in given path grouping by extensions', function (): void {
     expect(Lister::files_by_extension('tests/assets/lister-test/folder'))
         ->toBeArray()
-        ->ToBe(['php' => 1]);
+        ->ToBe([
+            'c' => 1,
+            'cs' => 1,
+            'js' => 1,
+            'php' => 1,
+            'r' => 1,
+        ]);
 });
 
 it('should return empty array when none file is in the given dir', function (): void {
