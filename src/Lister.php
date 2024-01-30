@@ -30,6 +30,8 @@ final class Lister
 
         $filesByExtension = array_count_values($allExtensionsInDir);
 
+        ksort($filesByExtension);
+
         return $filesByExtension;
     }
 }
